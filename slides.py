@@ -18,7 +18,7 @@ class Introduction(Slide):
         self.play(Write(Title2), run_time=3)
 
 class WithTeX(Slide):
-        def construct(self):
+    def construct(self):
         im = MathTex(r"i^i = e^{-\frac{\pi}{2}}").scale(2)
         im.set_color_by_gradient(BLUE, LIGHT_PINK, RED)
         giati = Text("Γιατί όμως;", line_spacing=1, font="Times New Roman", font_size=35).shift(UP * 1)

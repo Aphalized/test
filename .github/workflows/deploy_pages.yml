@@ -94,7 +94,7 @@ jobs:
 
     - name: Build HTML
       run: |
-        ${{ env.MANIM }} ${{ env.FILE }} ${{ env.SCENES }}
+        env.MANIM{{ env.MANIM }} {{ env.FILE }} ${{ env.SCENES }}
         manim-slides convert ${{ env.SCENES }} _site/index.html
 
     - name: Push to gh-pages branch

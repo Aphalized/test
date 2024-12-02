@@ -10,9 +10,9 @@ greek.add_to_preamble(r"""
 
 class Introduction(Slide):
     def construct(self):
-        Title = Text("Τριγωνομετρική απόδειξη του", line_spacing=1, font="Times New Roman", font_size=40).shift(UP*1)
+        Title = Text("Τριγωνομετρική απόδειξη του", line_spacing=1, font_size=40).shift(UP * 1)
         self.play(FadeIn(Title))
-        Title2 = Text("Πυθαγορείου Θεωρήματος", line_spacing=1, font="Times New Roman", font_size=60)
+        Title2 = Text("Πυθαγορείου Θεωρήματος", line_spacing=1, font_size=60)
         Title2.set_color_by_gradient(BLUE, LIGHT_PINK, RED)
         self.next_slide()
         self.play(Write(Title2), run_time=3)

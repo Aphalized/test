@@ -17,6 +17,7 @@ class Introduction(Slide):
         self.next_slide()
         self.play(Write(Title2), run_time=3)
         self.next_slide()
+        self.play(FadeOut(Title, Title2))
 
 class WithTeX(Slide):
     def construct(self):
@@ -110,7 +111,6 @@ class WithTeX(Slide):
         )
         groupp = VGroup(equation_group, equal_sign, fraction_line)
         self.play(Circumscribe(groupp))
-        self.next_slide()
 
 
 class Outro(Slide):

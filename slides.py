@@ -17,11 +17,11 @@ class Introduction(Slide):
         self.next_slide()
         self.play(Write(Title2), run_time=3)
         self.next_slide()
+        self.play(FadeOut(Title, Title2))
+        self.next_slide()
 
 class WithTeX(Slide):
     def construct(self):
-        self.play(FadeOut(Title, Title2))
-        self.next_slide()
         # Define the vertices of the triangle
         B = DOWN * 3 + LEFT * 5  # Bottom-left corner
         C = DOWN * 3 + RIGHT * 5  # Bottom-right corner

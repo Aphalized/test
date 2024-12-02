@@ -17,8 +17,6 @@ class Introduction(Slide):
         self.next_slide()
         self.play(Write(Title2), run_time=3)
         self.next_slide()
-        self.play(FadeOut(Title, Title2))
-        self.next_slide()
 
 class WithTeX(Slide):
     def construct(self):
